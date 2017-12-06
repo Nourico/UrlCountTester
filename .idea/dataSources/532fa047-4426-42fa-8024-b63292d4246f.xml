@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails UrlCountTester: development">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="UrlCountTester_development">
+      <ObjectId>16447</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12938</ObjectId>
+    </database>
+    <database id="4" parent="1" name="SimpleLibrary_development">
+      <ObjectId>16395</ObjectId>
+    </database>
+    <schema id="5" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-12-05.09:36:35.946</IntrospectionTimestamp>
+      <IntrospectionStateNumber>626</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="6" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="information_schema">
+      <ObjectId>12648</ObjectId>
+    </schema>
+    <sequence id="11" parent="5" name="urls_id_seq">
+      <ObjectId>16475</ObjectId>
+      <StateNumber>626</StateNumber>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="12" parent="5" name="ar_internal_metadata">
+      <ObjectId>16456</ObjectId>
+      <StateNumber>620</StateNumber>
+    </table>
+    <table id="13" parent="5" name="schema_migrations">
+      <ObjectId>16448</ObjectId>
+      <StateNumber>619</StateNumber>
+    </table>
+    <table id="14" parent="5" name="urls">
+      <ObjectId>16477</ObjectId>
+      <StateNumber>626</StateNumber>
+    </table>
+    <column id="15" parent="12" name="key">
+      <Position>1</Position>
+      <DataType>varchar|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="16" parent="12" name="value">
+      <Position>2</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="17" parent="12" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+    </column>
+    <column id="18" parent="12" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>620</StateNumber>
+    </column>
+    <index id="19" parent="12" name="ar_internal_metadata_pkey">
+      <ObjectId>16462</ObjectId>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="12" name="ar_internal_metadata_pkey">
+      <ObjectId>16463</ObjectId>
+      <ColNames>key</ColNames>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="13" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>619</StateNumber>
+    </column>
+    <index id="22" parent="13" name="schema_migrations_pkey">
+      <ObjectId>16454</ObjectId>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="13" name="schema_migrations_pkey">
+      <ObjectId>16455</ObjectId>
+      <ColNames>version</ColNames>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>626</StateNumber>
+      <SequenceName>urls_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;urls_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="25" parent="14" name="address">
+      <Position>2</Position>
+      <DataType>varchar|0</DataType>
+      <StateNumber>626</StateNumber>
+    </column>
+    <column id="26" parent="14" name="visit_date">
+      <Position>3</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>626</StateNumber>
+    </column>
+    <index id="27" parent="14" name="urls_pkey">
+      <ObjectId>16484</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="28" parent="14" name="urls_pkey">
+      <ObjectId>16485</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>urls_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
